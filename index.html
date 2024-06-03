@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezilla</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/icon.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+</head>
+
+<body>
+    <header id="navbar">
+        <div class="mini-nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p><i class="bi bi-geo-alt"></i>Rezilla, 18 Grattan St, Brooklyn</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-info d-flex justify-content-end">
+                            <a class="left-underline" href="tel:+1 206-214-2298"><i class="bi bi-telephone"></i>+1
+                                206-214-2298</a>
+                            <a class="left-underline" href="mailto:support@rezilla.com"><i
+                                    class="bi bi-envelope"></i>support@rezilla.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-nav">
+            <nav>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-5 d-flex align-items-center">
+                            <div class="desktop-menu">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">About</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Listing</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Services</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Blogs</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-2">
+                            <div class="logo-div">
+                                <a href="/index.html"><img src="assets/img/logo.png" alt="logo"></a>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="btns d-flex justify-content-end">
+                                <button class="btn"><i class="bi bi-person-circle"></i> Login/Register</button>
+                                <button class="btn btn-2"><i class="bi bi-house-door"></i> Add Listing</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section id="hero">
+        <div class="container ">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="main-text">
+                        <span>Real Estate</span>
+                        <h1>Find a Perfect <br>home you love..!</h1>
+                        <p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum. Integer a dolor eu sapien
+                            sodales vulputate ac in purus.</p>
+                        <div id="carouselExample" class="carousel slide">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/img/hero-img.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/hero-img.png" class="d-block w-100" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/img/hero-img.png" class="d-block w-100" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"><i
+                                        class="bi bi-caret-left-fill"></i></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                        class="bi bi-caret-right-fill"></i></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-block">
+                    <div class="form-outer d-flex justify-content-around ">
+                        <div class="form">
+                            <div class="sale-rent d-flex justify-content-around">
+                                <span class="sale">For Sale</span>
+                                <span>For Rent</span>
+                            </div>
+                            <form action="" method="post" class="d-flex flex-column ">
+                                <input type="text" placeholder="New York, San Francisco, etc">
+                                <select name="type" id="type" title="typee">
+                                    <option value="1">Select Property type</option>
+                                    <option value="1">Select Property type</option>
+                                    <option value="1">Select Property type</option>
+                                    <option value="1">Select Property type</option>
+                                    <option value="1">Select Property type</option>
+                                </select>
+                                <select name="type" id="type-room" title="typee">
+                                    <option value="1">Select Rooms</option>
+                                    <option value="1">Select Rooms</option>
+                                    <option value="1">Select Rooms</option>
+                                    <option value="1">Select Rooms</option>
+                                    <option value="1">Select Rooms</option>
+                                </select>
+                                <button class="btn" type="submit" title="search"><i class="bi bi-search"></i>
+                                    Search</button>
+                            </form>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="cir-card d-flex justify-content-end">
+                        <div class="cord d-flex align-items-center">
+                            <img src="assets/img/icons.png" alt="icons">
+                            <p>72k+ Happy <br>Customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="cir-card d-flex ">
+                        <div class="cord d-flex align-items-center">
+                            <p>200+ New <br>Listings Everyday!</p>
+                            <img src="assets/img/icon2.png" alt="icons" width="45px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="clients">
+        <div class="container ">
+            <div class="row client-text">
+                <div class="col-lg-4">
+                    <div class="circle-img d-flex justify-content-center">
+                        <img src="assets/img/circle.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 clinet-col">
+                    <div class="text">
+                        <p>Trusted by 100+ Companies across the globe!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="customer-logos slider">
+                    <div class="slide"><img src="assets/img/client-1.png" alt="clients"></div>
+                    <div class="slide"><img src="assets/img/client-2.png" alt="clients"></div>
+                    <div class="slide"><img src="assets/img/client-3.png" alt="clients"></div>
+                    <div class="slide"><img src="assets/img/client-4.png" alt="clients"></div>
+                    <div class="slide"><img src="assets/img/client-5.png" alt="clients"></div>
+                    <div class="slide"><img src="assets/img/client-6.png" alt="clients"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="who">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="we-are">
+                        <span>WHO ARE WE</span>
+                        <h2>Assisting individuals in locating the appropriate <br>real estate.</h2>
+                        <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. Nulla
+                            convallis ipsum molestie nibh malesuada, ac malesuada leo volutpat.</p>
+                        <div class="small-card d-flex align-items-center">
+                            <div class="img">
+                                <img src="assets/img/smart.png" alt="">
+                            </div>
+                            <div class="card-text ">
+                                <h6>Donec porttitor euismod</h6>
+                                <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+                            </div>
+                        </div>
+                        <div class="small-card d-flex align-items-center">
+                            <div class="img">
+                                <img src="assets/img/user.png" alt="">
+                            </div>
+                            <div class="card-text ">
+                                <h6>Donec porttitor euismod</h6>
+                                <p>Nullam a lacinia ipsum, nec dignissim purus. Nulla</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="we-img d-flex justify-content-center flex-column align-items-center">
+                        <img src="assets/img/real-we.png" alt="" class="img-1">
+                        <img src="assets/img/we-img.png" alt="" class="img-2">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="checkout">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="prop">
+                        <span>CHECKOUT OUR NEW</span>
+                        <h2>Latest Listed Properties</h2>
+                        <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 btnss">
+                    <div class="btns d-flex align-items-center justify-content-end">
+                        <button type="button" title="all" class="all btn">All</button>
+                        <button type="button" title="all" class="sell btn">Sell</button>
+                        <button type="button" title="all" class="all btn">Rent</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="cards">
+                        <div class="img-card">
+                            <img src="assets/img/img-1.png" alt="">
+                            <span class="d-flex align-items-center red"><img src="assets/img/popular.png" alt=""><p>Popular</p></span>
+                        </div>
+                        <div class="card-price">
+                            <h3>$ 5,970</h3>
+                            <h5>Tranquil Haven in the Woods</h5>
+                            <p>103 Wright CourtBurien, WA 98168</p>
+                            <div class="space d-flex">
+                                <span class="d-flex align-items-center"><img src="assets/img/bed.png" alt=""><p>4 Beds</p></span>
+                                <span class="d-flex align-items-center"><img src="assets/img/bath.png" alt=""><p>3 Baths</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="cards">
+                        <div class="img-card">
+                            <img src="assets/img/img-2.png" alt="">
+                            <span class="d-flex align-items-center blue"><img src="assets/img/new.png" alt=""><p>New Listing</p></span>
+                        </div>
+                        <div class="card-price">
+                            <h3>$ 1,970</h3>
+                            <h5>Serene Retreat by the Lake</h5>
+                            <p>1964 Jehovah Drive, VA 22408</p>
+                            <div class="space d-flex">
+                                <span class="d-flex align-items-center"><img src="assets/img/bed.png" alt=""><p>3 Beds</p></span>
+                                <span class="d-flex align-items-center"><img src="assets/img/bath.png" alt=""><p>2 Baths</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="cards">
+                        <div class="img-card">
+                            <img src="assets/img/img-3.png" alt="">
+                            <span class="d-flex align-items-center green"><img src="assets/img/price.png" alt=""><p>Discounted Price</p></span>
+                        </div>
+                        <div class="card-price">
+                            <h3>$ 3,450</h3>
+                            <h5>Tranquil Haven in the Woods</h5>
+                            <p>1508 Centennial Farm RoadHarlan, 51537</p>
+                            <div class="space d-flex">
+                                <span class="d-flex align-items-center"><img src="assets/img/bed.png" alt=""><p>4 Beds</p></span>
+                                <span class="d-flex align-items-center"><img src="assets/img/bath.png" alt=""><p>4 Baths</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="cards">
+                        <div class="img-card">
+                            <img src="assets/img/img-4.png" alt="">
+                            <span class="d-flex align-items-center red"><img src="assets/img/popular.png" alt=""><p>Popular</p></span>
+                        </div>
+                        <div class="card-price">
+                            <h3>$ 2,389</h3>
+                            <h5>Grand Estate on the Hilltop</h5>
+                            <p>103 Wright CourtBurien, WA 98168</p>
+                            <div class="space d-flex">
+                                <span class="d-flex align-items-center"><img src="assets/img/bed.png" alt=""><p>4 Beds</p></span>
+                                <span class="d-flex align-items-center"><img src="assets/img/bath.png" alt=""><p>3 Baths</p></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class="service text-center">
+                        <span>Our Services</span>
+                        <h2>Donec porttitor euismod dignissim</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-lg-4 d-flex justify-content-end">
+                    <div class="service-card text-center">
+                        <img src="assets/img/search.png" alt="">
+                        <h3>Buy a New Home</h3>
+                        <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex justify-content-center">
+                    <div class="service-card text-center">
+                        <img src="assets/img/home.png" alt="">
+                        <h3>Sell a House</h3>
+                        <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex ">
+                    <div class="service-card text-center">
+                        <img src="assets/img/bed-icon.png" alt="">
+                        <h3>Rent a House</h3>
+                        <p>Donec porttitor euismod dignissim. Nullam a lacinia ipsum, nec dignissim purus. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="town">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="scricle text-center pb-5"><img src="assets/img/scricle.png" alt=""></div>
+                </div>
+                <div class="col-lg-12 place">
+                    <span>AREAS ACROSS THE TOWN</span>
+                    <h2>Neighborhood Properties</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                    <div class="prop-img">
+                        <img src="assets/img/ny.png" alt="">
+                        <div class="number">
+                            <h2>216</h2>
+                            <p>New York,NY</p>
+                        </div>
+                    </div>
+                    <div class="prop-img">
+                        <img src="assets/img/tx.png" alt="">
+                        <div class="number">
+                            <h2>141</h2>
+                            <p>Huston,TX</p>
+                        </div>
+                    </div>
+                    <div class="prop-img one">
+                        <img src="assets/img/ca.png" alt="">
+                        <div class="number">
+                            <h2>212</h2>
+                            <p>San Diego,CA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12 d-flex align-items-center justify-content-center">
+                    <div class="prop-img">
+                        <img src="assets/img/pa.png" alt="">
+                        <div class="number">
+                            <h2>183</h2>
+                            <p>Phildephia,PA</p>
+                        </div>
+                    </div>
+                    <div class="prop-img one">
+                        <img src="assets/img/sf.png" alt="">
+                        <div class="number">
+                            <h2>216</h2>
+                            <p>New Jersy,NY</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-12">
+                    <div class="circle-b d-flex justify-content-end">
+                        <img src="assets/img/circle-b.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <span>Introduce yourself to </span>
+                    <h2>Our Team of Experts</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 -team-memeber">
+                    <div class="team text-center">
+                        <img src="assets/img/team-1.png" alt="">
+                        <h3>Brendon M</h3>
+                        <span>CEO & Founder</span>
+                    </div>
+                    <div class="team text-center">
+                        <img src="assets/img/team-2.png" alt="">
+                        <h3>Brendon M</h3>
+                        <span>CEO & Founder</span>
+                    </div>
+                    <div class="team text-center">
+                        <img src="assets/img/team-3.png" alt="">
+                        <h3>Brendon M</h3>
+                        <span>CEO & Founder</span>
+                    </div>
+                    <div class="team text-center">
+                        <img src="assets/img/team-4.png" alt="">
+                        <h3>Brendon M</h3>
+                        <span>CEO & Founder</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="blog text-center">
+                        <span>WHAT’S TRENDING</span>
+                        <h2>Latest Blogs & Posts</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <p class="d-flex flex-column justify-content-center align-items-center"><span>28</span><span>Tue</span></p>
+                            <img src="assets/img/blog-1.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>Top 10 Home Buying Mistakes to Avoid</h3>
+                            <p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+                            <div class="icon d-flex justify-content-end">
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <p class="d-flex flex-column justify-content-center align-items-center"><span>8</span><span>Mon</span></p>
+                            <img src="assets/img/blog-2.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>How to Stage Your Home for a Quick Sale</h3>
+                            <p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+                            <div class="icon d-flex justify-content-end">
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-card">
+                        <div class="blog-img">
+                            <p class="d-flex flex-column justify-content-center align-items-center"><span>26</span><span>Wed</span></p>
+                            <img src="assets/img/blog-3.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3>5 Tips for First-Time Home Sellers</h3>
+                            <p>Etiam eget elementum elit. Aenean dignissim dapibus vestibulum</p>
+                            <div class="icon d-flex justify-content-end">
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="testi">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="buttons">
+                        <span>TESTIMONIALS</span>
+                        <h2>Look What Our <br>Customers Say!</h2>
+                        <p>Fusce venenatis tellus a felis scelerisque, non pulvinar est pellentesque. </p>
+                        <div class="arrows">
+                            <a class="prev" onclick="plusSlides(-1)"><i class="bi bi-arrow-left"></i></a>
+                            <a class="next" onclick="plusSlides(1)"><i class="bi bi-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="testi-caro">
+                        <div class="img-icon"><img src="assets/img/testi-circle.png" alt=""></div>
+                        <div class="mySlides">
+                            <div class="quote">
+                                <img src="assets/img/quote.png" alt="">
+                                <p>I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!</p>
+                            </div>
+                            <div class="client d-flex justify-content-between align-items-center">
+                                <div class="image d-flex align-items-center">
+                                    <img src="assets/img/client.png" alt="">
+                                    <p>Barbara D. Smith</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="quote">
+                                <img src="assets/img/quote.png" alt="">
+                                <p>I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!</p>
+                            </div>
+                            <div class="client d-flex justify-content-between align-items-center">
+                                <div class="image d-flex align-items-center">
+                                    <img src="assets/img/client.png" alt="">
+                                    <p>Ashly D. Smith</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="quote">
+                                <img src="assets/img/quote.png" alt="">
+                                <p>I highly recommend Jodi J. Appleby. She was attentive to our needs and worked tirelessly to find us the perfect home. We couldn't be happier with our new place!</p>
+                            </div>
+                            <div class="client d-flex justify-content-between align-items-center">
+                                <div class="image d-flex align-items-center">
+                                    <img src="assets/img/client.png" alt="">
+                                    <p>Scarlet D. Smith</p>
+                                </div>
+                                <div class="stars">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="agent">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="agent-img text-center">
+                        <img src="assets/img/agent.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 d-flex align-items-center justify-content-center flex-column">
+                    <div class="become text-white">
+                        <h2 class="fw-bold">Become a Agent.</h2>
+                        <p>Fusce venenatis tellus a felis scelerisque. venenatis tellus a felis scelerisque. </p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="buttons">
+                        <button type="button" class="btn">Register</button>
+                        <img src="assets/img/agent-circle.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <script>
+        function loadCSS() {
+            var screenWidth = window.innerWidth;
+            var link = document.getElementById('responsive-css');
+            if (screenWidth > 700) {
+                link.href = 'assets/css/style.css';
+            } else {
+                link.href = 'style2.css';
+            }
+        }
+        window.onload = loadCSS;
+        window.onresize = loadCSS;
+    </script> -->
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
